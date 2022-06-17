@@ -1,0 +1,15 @@
+DirectoryIndex home.php sitemap.xml
+
+Options -Indexes
+ErrorDocument 402 /home
+ErrorDocument 403 /home
+ErrorDocument 500 /home
+
+ErrorDocument 400 /400.html
+ErrorDocument 404 /404.html
+
+
+RewriteEngine on
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP_HOST} (www\.)?proyek.luckytruedev.com 
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
