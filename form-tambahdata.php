@@ -1,9 +1,9 @@
 <?php
 // membutuhkan pemanggilan akses koneksi (mysql)
-require 'koneksi.php';
+// (DISI)
 
 // menjalankan sessions
-session_start();
+// (DISI)
  
 // check apakah session email sudah ada atau belum.
 // jika belum maka akan diredirect ke halaman index (login)

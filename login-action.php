@@ -1,7 +1,8 @@
 <?php
-require 'koneksi.php';
+// membutuhkan pemanggilan akses koneksi (mysql)
+// (DISI)
 // fungsi untuk memulai session
-session_start();
+// (DISI)
  
 // variabel kosong untuk menyimpan pesan error
 $form_error = '';

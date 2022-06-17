@@ -1,7 +1,7 @@
 <?php
 
 // membutuhkan pemanggilan akses koneksi (mysql)
-include("koneksi.php");
+// (DISI)
 
 // jika id tidak ada / null akan kembali ke index.php
 if(!isset($_GET['id'])){
@@ -12,14 +12,12 @@ if(!isset($_GET['id'])){
 $id = mysqli_real_escape_string($db,$_GET['id']);
 
 //buat query
-$sql = "SELECT * FROM dataku WHERE id=$id";
-$query = mysqli_query($db, $sql);
+// (DISI)
+// (DISI)
 $editdata = mysqli_fetch_assoc($query);
 
 // cek jika edit tidak ditemukan
-if(mysqli_num_rows($query) < 1){
-    die("Data tidak ditemukan");
-}
+// (DISI)
 
 ?>
 
